@@ -1,0 +1,11 @@
+<div class="center">
+  <div>
+    <button class="btn btn-dark right" (click)="getDetails()">Open Saved Token Details</button>
+  </div>
+  <div *ngIf="UserInfo" class="boxstyle" style="color: black; font-weight: bolder">
+    <h5> Saved Details</h5><br>
+    <p>User ID:  {{UserInfo.id}}</p>
+    <p>User Email:  {{UserInfo.email}}</p>
+    <p>User Name: {{UserInfo.username}}</p>
+  </div>
+</div>
